@@ -26,7 +26,7 @@
 ==================================================*/
 
 
-  @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
 /*
@@ -72,7 +72,7 @@ h4:before {
 ==================================================*/
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 14px;
     line-height: 24px;
 }
@@ -86,6 +86,15 @@ body {
     height: 50px;
 }
 
+.col-md-6 p {
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.col-md-6 span {
+    color: #952b28;
+    font-weight: 700;
+}
 
 /* preloader
 ==================================================*/
@@ -156,11 +165,13 @@ body {
         margin-top: -30px;
         margin-left: -30px
     }
+
     .preloader:before {
         left: -2px;
         top: -2px;
         border-width: 2px
     }
+
     .preloader>.icon {
         height: 37.5px;
         width: 15.9px;
@@ -176,6 +187,7 @@ body {
         margin-top: -30px;
         margin-left: -30px
     }
+
     .preloader>.icon {
         height: 50px;
         width: 21.2px;
@@ -189,6 +201,7 @@ body {
         -webkit-transform: rotate(0);
         transform: rotate(0)
     }
+
     to {
         -webkit-transform: rotate(359deg);
         transform: rotate(359deg)
@@ -200,6 +213,7 @@ body {
         -webkit-transform: rotate(0);
         transform: rotate(0)
     }
+
     to {
         -webkit-transform: rotate(359deg);
         transform: rotate(359deg)
@@ -210,6 +224,7 @@ body {
     from {
         opacity: 0
     }
+
     to {
         opacity: 1
     }
@@ -219,6 +234,7 @@ body {
     from {
         opacity: 0
     }
+
     to {
         opacity: 1
     }
@@ -290,6 +306,7 @@ a.active {
     background-size: cover;
     height: 100vh;
 }
+
 #home:hover {
     background: url(../img/color.jpg);
     background-size: cover;
@@ -319,18 +336,20 @@ a.active {
     margin: 0 auto;
     filter: grayscale(1);
 }
+
 .about-img-div:hover img {
     filter: grayscale(0);
     transition: all 0.2s;
 
 }
+
 .about-border {
     position: absolute;
     border: 10px double #000000;
     width: 400px;
-    height: 400px;
-    top: 40px;
-    left: 50px;
+    height: 550px;
+    top: 50px;
+    left: 90px;
     z-index: 1
 }
 
@@ -340,21 +359,23 @@ a.active {
 #skill {
     padding: 100px 0;
 }
+
 .chart {
     width: 100%;
     text-align: center;
     position: relative;
 }
-.chart span.title{
+
+.chart span.title {
     position: absolute;
-    display: block; 
-    width: 100%; 
-    text-align: center; 
+    display: block;
+    width: 100%;
+    text-align: center;
     top: 50%;
     transform: translateY(-50%);
 }
 
-.chart span.title b{
+.chart span.title b {
     font-size: 20px;
 }
 
@@ -503,28 +524,28 @@ a.active {
     padding-top: 55px;
 }
 
-.portfolio_container .col-md-12{
-    padding-left:0;
-	padding-right:0;
+.portfolio_container .col-md-12 {
+    padding-left: 0;
+    padding-right: 0;
 }
-	
-.project_btn, 
-.project_btn:focus{
-    display:inline-block;
-	padding:5px 20px;
-	background:#952b28;
-	color:#fff;
+
+.project_btn,
+.project_btn:focus {
+    display: inline-block;
+    padding: 5px 20px;
+    background: #952b28;
+    color: #fff;
     margin-bottom: 5px;
 }
 
-.project_btn:hover{
-    color:#fff;
-	background:#000000;
+.project_btn:hover {
+    color: #fff;
+    background: #000000;
 }
 
-.project_btn_box{
-    text-align:left;
-    padding-top:20px;
+.project_btn_box {
+    text-align: left;
+    padding-top: 20px;
 }
 
 
@@ -688,10 +709,12 @@ a.active {
     color: #D33E43;
     margin-left: 10px
 }
-#contact .col-md-4{
+
+#contact .col-md-4 {
     text-align: center;
 }
-#contact i{
+
+#contact i {
     font-size: 50px;
 }
 
@@ -699,10 +722,11 @@ a.active {
 /* footer
 ==================================================*/
 
-#footer{
+#footer {
     padding: 30px 0;
 }
-#footer p{
+
+#footer p {
     margin-bottom: 0;
     text-align: center;
 }
@@ -715,9 +739,10 @@ a.active {
     .portfolio .categories-grid .categories ul li a {
         padding: 0 2px;
     }
-	.project_btn{
-		margin:2px;
-	}
+
+    .project_btn {
+        margin: 2px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -728,19 +753,22 @@ a.active {
 }
 
 @media (max-width: 750px) {
-    nav ul{
+    nav ul {
         padding: 20px 0;
     }
-    nav li a{
+
+    nav li a {
         font-size: 12px;
     }
-    nav li{
+
+    nav li {
         margin: 10px;
     }
 }
 
 @media (max-width: 600px) {
-#home,
+
+    #home,
     .disply-table {
         height: 600px;
     }
@@ -752,10 +780,11 @@ a.active {
         font-size: 50px;
         line-height: 50px;
     }
-    
+
     .about-border {
         width: 265px;
     }
+
     .portfolio .categories-grid .categories ul li {
         list-style: none;
         margin: 10px 0;
@@ -763,15 +792,18 @@ a.active {
 }
 
 @media (max-width: 444px) {
-    nav ul{
+    nav ul {
         padding: 20px 0;
     }
+
     nav li {
         margin: 6px;
     }
+
     nav li a {
         font-size: 10px;
     }
+
     #home,
     .disply-table {
         height: 500px;
@@ -779,15 +811,18 @@ a.active {
 }
 
 @media (max-width: 374px) {
-    nav ul{
+    nav ul {
         width: 100%;
     }
-    nav{
+
+    nav {
         display: none;
     }
+
     .about-border {
         display: none;
     }
+
     #home,
     .disply-table {
         height: 450px;
@@ -795,9 +830,7 @@ a.active {
 }
 
 @media (max-width: 320px) {
-    header{
+    header {
         height: auto;
     }
 }
-
-
